@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 ubuntu:25.10
+FROM --platform=linux/amd64 ubuntu:noble
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update -y && apt install --no-install-recommends -y ubuntu-desktop tigervnc-standalone-server novnc websockify sudo xterm init systemd snapd vim net-tools curl wget git tzdata
